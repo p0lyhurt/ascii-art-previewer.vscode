@@ -3,6 +3,7 @@
 	"displayName": "ASCII Art Previewer",
 	"description": "Previews ASCII art using MIRC colors.",
 	"version": "0.0.1",
+	"repository": "https://github.com/p0lyhurt/ascii-art-previewer.vscode",
 	"engines": {
 		"vscode": "^1.66.0"
 	},
