@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "AsciiArtConverterFace";
+  src: url("fonts/Web_IBM_BIOS-2y.woff") format("woff"),
+       url("fonts/MxPlus_IBM_BIOS-2y.ttf") format("ttf");
+}
+
+ascii-art-converter-font-fixer {
+  font-family: "AsciiArtConverterFace";
+  font-size: 1px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .ascii-preview {
   font-family: Menlo, Consolas, DejaVu Sans Mono, monospace;
   font-size: 11pt;
@@ -10,4 +27,8 @@
 
 .preview-error {
   margin-left: 1em;
+}
+
+.ascii-conversion-form {
+  margin-top: 1em;
 }

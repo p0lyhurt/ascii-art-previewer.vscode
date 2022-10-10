@@ -2,7 +2,7 @@
   "name": "ascii-art-previewer",
 	"displayName": "ASCII Art Previewer",
 	"description": "Previews ASCII art using MIRC colors.",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"repository": "https://github.com/p0lyhurt/ascii-art-previewer.vscode",
 	"publisher": "polyhurt",
 	"engines": {
@@ -26,6 +26,41 @@
 			{
 				"command": "ascii-art-previewer.show",
 				"key": "Ctrl+K A"
+			}
+		],
+		"configuration": [
+			{
+				"title": "ASCII Art Previewer: PNG Converter Defaults",
+				"properties": {
+					"ascii-art-previewer.defaultScale": {
+						"title": "Default Scale",
+						"description": "Default scale factor used when generating an image (pixels per \"blown-up\" pixel).",
+						"type": "integer",
+						"default": 8
+					},
+					"ascii-art-previewer.defaultCharacterMode": {
+						"title": "Default Character Mode",
+						"type": "string",
+						"default": "full",
+						"enum": ["full", "minus-half"],
+						"enumDescriptions": [
+							"Font sizes are twice the scale factor (two \"blown-up\" pixels tall).",
+							"Characters take up less room within each \"blown-up\" pixel."
+						]
+					},
+					"ascii-art-previewer.defaultBackgroundColor": {
+						"title": "Default Background Color",
+						"description": "Characters missing from the end of lines are filled in with this color.",
+						"type": "string",
+						"default": "#000000",
+						"pattern": "^#[A-Fa-f0-9]{6}$"
+					},
+					"ascii-art-previewer.defaultDirectory": {
+						"title": "Default Output Directory",
+						"type": "string",
+						"default": "/tmp"
+					}
+				}
 			}
 		]
 	},
